@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Ground.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,255); }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Ground.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.company; 
+ 
+</span><span class="s0">public class </span><span class="s1">Ground { 
+    </span><span class="s0">public static void </span><span class="s1">main (String[] args) { 
+        </span><span class="s0">int</span><span class="s1">[][] ground; 
+        ground=</span><span class="s0">new int</span><span class="s1">[</span><span class="s2">8</span><span class="s1">][</span><span class="s2">8</span><span class="s1">]; 
+        </span><span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s2">0</span><span class="s1">; i &lt; ground.length; i++) { 
+            </span><span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">j = </span><span class="s2">0</span><span class="s1">; j &lt; ground[i].length; j++) { 
+                ground[i][j] = j + </span><span class="s2">1</span><span class="s1">; 
+            } 
+        } 
+        render(ground); 
+ 
+ 
+    } 
+ 
+ 
+    </span><span class="s0">private static void </span><span class="s1">render(</span><span class="s0">int</span><span class="s1">[][] ground) { 
+ 
+        </span><span class="s0">for </span><span class="s1">(</span><span class="s0">int</span><span class="s1">[] anArr : ground) { 
+ 
+            </span><span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">anAnArr : anArr) { 
+ 
+                System.out.print(</span><span class="s3">&quot;━&quot;</span><span class="s1">); 
+ 
+            } 
+            System.out.print(</span><span class="s3">&quot;┃&quot;</span><span class="s1">); 
+        } 
+ 
+ 
+ 
+    } 
+} 
+</span></pre>
+</body>
+</html>
